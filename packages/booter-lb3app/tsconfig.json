@@ -11,16 +11,7 @@
   ],
   "references": [
     {
-      "path": "../boot/tsconfig.json"
-    },
-    {
-      "path": "../core/tsconfig.json"
-    },
-    {
       "path": "../repository/tsconfig.json"
-    },
-    {
-      "path": "../rest/tsconfig.json"
     },
     {
       "path": "../testlab/tsconfig.json"

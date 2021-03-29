@@ -11,13 +11,7 @@
   ],
   "references": [
     {
-      "path": "../core/tsconfig.json"
-    },
-    {
       "path": "../openapi-spec-builder/tsconfig.json"
-    },
-    {
-      "path": "../rest/tsconfig.json"
     },
     {
       "path": "../security/tsconfig.json"

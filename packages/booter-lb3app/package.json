@@ -1,9 +1,23 @@
 {
   "name": "@loopback/booter-lb3app",
-  "version": "2.3.0",
   "description": "A booter component for LoopBack 3 applications to expose their REST API via LoopBack 4",
+  "version": "2.3.0",
+  "keywords": [
+    "LoopBack",
+    "LB3",
+    "Boot",
+    "Compatibility"
+  ],
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "IBM Corp.",
+  "copyright.owner": "IBM Corp.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback-next.git",
+    "directory": "packages/booter-lb3app"
+  },
   "engines": {
     "node": "^10.16 || 12 || 14 || 15"
   },
@@ -14,12 +28,15 @@
     "test": "lb-mocha \"dist/__tests__/**/*.js\"",
     "verify": "npm pack && tar xf loopback-booter-lb3app*.tgz && tree package && npm run clean"
   },
-  "author": "IBM Corp.",
-  "copyright.owner": "IBM Corp.",
-  "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "README.md",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
   "peerDependencies": {
     "@loopback/boot": "^3.3.0",
     "@loopback/core": "^2.15.0",
@@ -34,12 +51,9 @@
     "tslib": "^2.1.0"
   },
   "devDependencies": {
-    "@loopback/boot": "^3.3.0",
     "@loopback/build": "^6.3.0",
-    "@loopback/core": "^2.15.0",
     "@loopback/eslint-config": "^10.1.0",
     "@loopback/repository": "^3.5.0",
-    "@loopback/rest": "^9.2.0",
     "@loopback/testlab": "^3.3.0",
     "@types/debug": "^4.1.5",
     "@types/lodash": "^4.14.168",
@@ -48,22 +62,5 @@
     "cors": "^2.8.5",
     "helmet": "^4.4.1",
     "loopback-boot": "^3.3.1"
-  },
-  "keywords": [
-    "LoopBack",
-    "LB3",
-    "Boot",
-    "Compatibility"
-  ],
-  "files": [
-    "README.md",
-    "dist",
-    "src",
-    "!*/__tests__"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/strongloop/loopback-next.git",
-    "directory": "packages/booter-lb3app"
   }
 }

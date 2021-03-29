@@ -1,13 +1,13 @@
 {
   "packages": [
     "acceptance/*",
-    "fixtures/*",
     "benchmark",
+    "bodyparsers/*",
     "docs",
     "examples/*",
-    "packages/*",
     "extensions/*",
-    "bodyparsers/*",
+    "fixtures/*",
+    "packages/*",
     "sandbox/*"
   ],
   "command": {
@@ -16,11 +16,13 @@
       "forceLocal": true
     },
     "version": {
-      "forcePublish": "@loopback/cli,@loopback/docs",
+      "forcePublish": [
+        "@loopback/cli",
+        "@loopback/docs"
+      ],
       "conventionalCommits": true,
       "message": "chore: publish release"
     },
-    "publish": {},
     "run": {
       "prefix": false,
       "loglevel": "silent",

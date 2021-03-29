@@ -12,9 +12,6 @@
   ],
   "references": [
     {
-      "path": "../core/tsconfig.json"
-    },
-    {
       "path": "../model-api-builder/tsconfig.json"
     },
     {

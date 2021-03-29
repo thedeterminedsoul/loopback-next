@@ -9,12 +9,5 @@
   "include": [
     "src"
   ],
-  "references": [
-    {
-      "path": "../core/tsconfig.json"
-    },
-    {
-      "path": "../repository/tsconfig.json"
-    }
-  ]
+  "references": []
 }
