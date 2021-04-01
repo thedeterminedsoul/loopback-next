@@ -20,10 +20,9 @@
     "npm": ">=7"
   },
   "scripts": {
-    "bootstrap:fixtures": "node ../../packages/monorepo/lib/run-lerna.js bootstrap",
     "build:fixtures": "node ../../packages/monorepo/lib/run-lerna.js run build",
     "clean:fixtures": "node ../../packages/monorepo/lib/run-lerna.js run clean",
-    "build": "npm -s run bootstrap:fixtures && npm -s run clean:fixtures && npm run -s build:fixtures",
+    "build": "npm -s run clean:fixtures && npm run -s build:fixtures",
     "postinstall": "npm run build"
   },
   "devDependencies": {
